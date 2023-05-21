@@ -1,31 +1,102 @@
 <!DOCTYPE html>
-<!-- Created By Tang Soklim -->
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Relationship</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-</head>
-<body>
+<!--[if lt IE 8]><html class="no-js lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js"><!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <div class="wrapper">
-    <div class="img-area">
-      <div class="inner-area">
-        <img src="https://www.pngkit.com/png/detail/280-2806375_how-to-draw-holding-hands-hands-holding-how.png" alt="Holding hand">
+    <title>Particulate Medusae</title>
+
+    <meta name="description" content="Soft body jellyfish simulation. Built with Particulate.js and Three.js">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="./build/static/img/favicon.ico">
+    <link rel="stylesheet" href="./build/static/css/style.css" />
+    
+  </head>
+  <body>
+    <article id="info" class="modal info-modal">
+      <h1>Medusae</h1>
+      <div class="info-section">
+        <dl>
+          <dt>Concept, Design & Code</dt>
+          <dd><a href="http://jayweeks.com">Jay Weeks</a></dd>
+        </dl>
+        <dl>
+          <dt>Audio Design</dt>
+          <dd>JP Arsenault</a></dd>
+        </dl>
+      </div>
+      <div class="info-section">
+        <dl>
+          <dt>Physics</dt>
+          <dd><a href="http://particulatejs.org">Particulate</a></dd>
+        </dl>
+        <dl>
+          <dt>Graphics</dt>
+          <dd><a href="http://threejs.org">Three</a></dd>
+        </dl>
+      </div>
+      <div class="info-section">
+        <dl>
+          <dt>Source</dt>
+          <dd><a href="http://github.com/jpweeks/particulate-medusae">Github</a></dd>
+        </dl>
+        <dl>
+          <dt>Process</dt>
+          <dd><a href="https://www.flickr.com/photos/jpweeks/sets/72157646887502644/">Flickr</a></dd>
+        </dl>
+      </div>
+    </article>
+    <div id="cover-info" class="modal-cover"></div>
+
+    <div id="container-controls" style="visibility: hidden">
+      <div id="toggle-info" class="controls-button">
+        <div class="label">About</div>
+      </div>
+      <div id="toggle-dots" class="controls-button">
+        <div class="label">Particles</div>
+      </div>
+      <div id="menu-colors" class="controls-menu"></div>
+      <div id="toggle-colors" class="controls-button">
+        <div class="label">Colors</div>
+      </div>
+      <div id="toggle-audio" class="controls-button">
+        <div class="label">Audio</div>
+      </div>
+      <div id="toggle-postfx" class="controls-button">
+        <div class="label">Post FX</div>
+      </div>
+      <div id="toggle-sim" class="controls-button">
+        <div class="label">Run Sim</div>
       </div>
     </div>
- 
-    <div class="name">RELATIONSHIP ❤</div>
-    <div class="about">Been together since ...<span>/</span>....<span>/</span>...
+
+    <div id="container-stats" class="stats-panel">
+      <div id="container-graphs"></div>
+      <dl>
+        <dt>Particles</dt>
+        <dd id="particle-count"></dd>
+      </dl>
+      <dl>
+        <dt>Constraints</dt>
+        <dd id="constraint-count"></dd>
+      </dl>
+      <dl>
+        <dt>Forces</dt>
+        <dd id="force-count"></dd>
+      </dl>
     </div>
-<br>
-    <div class="abt">Tang Soklim  <span>With</span>...</div>
-<br>
 
+    <div id="container"></div>
 
-    <div class="days">
-      <span>...</span>
-      <span id="day">Days</span>
-</body>
+    
+      <script src="./build/static/js/three.min.js"></script>
+      <script src="./build/static/js/app.min.js"></script>
+    
+    <script>
+      App.STATIC_URL = "./build/static/";
+    </script>
+  </body>
 </html>
