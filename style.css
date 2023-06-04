@@ -25,7 +25,14 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
   
 }
 
-
+.msg{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0px;
+  height: 40px;
+  width: auto;
+}
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 *{
   margin: 0;
