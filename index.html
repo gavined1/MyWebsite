@@ -503,6 +503,11 @@ let prevl = 0;
 function updateEmo(lr) {
 	//simple/manual emo-adjustment - old
 	if (lr) {
+		if (home.innerHTML == "🥳") {
+    if (confirm("One more game?")) {
+        location.reload();
+    }
+}
 		if (thingie.offsetLeft < maxl) {
 			emo.innerHTML = "🙄";
 		}
@@ -881,6 +886,7 @@ cont.addEventListener("wheel", (e) => {
 		lastscrollpX = 0;
 	}
 });
+
   </script>
 </body>
 
